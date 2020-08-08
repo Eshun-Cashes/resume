@@ -1,0 +1,474 @@
+body{
+    margin: 0;
+    padding: 0;
+    line-height: 1.5;
+    font-size: 18px;
+    box-sizing: border-box;
+}
+
+.clear-fix{
+    content: "";
+    display: table;
+}
+
+li{
+    list-style: none;
+}
+
+/*------Whole Container -------*/
+.resume-wrapper{
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+}
+
+.resume-container{
+    text-align: center;
+}
+
+/*------ profile container and everything within that container ------*/
+
+.me{
+    width: 100%;
+    text-align: center;
+    font-weight: 42px;
+    text-decoration: underline;
+}
+
+.dp{
+    width: 200px;
+    height: 200px;
+    border-radius: 100%;
+}
+
+.profile-container{
+    display: table;
+    width: 40%;
+    float: left;
+    padding-top: 25px;
+    padding-bottom: 50px;
+}
+
+.profile{
+    display: flex;
+    margin-bottom: 10%;
+}
+
+.profile-pic{
+    position: relative;
+    text-align: left;
+    margin-left: 5%;
+}
+
+.name-wrapper{
+    position: relative;
+    text-align: center;
+    margin-top: 8%;
+    margin-left: 4%;
+}
+
+.name-wrapper h1{
+    font-weight: 50px;
+    font-size: 32px;
+}
+
+.bold{
+    font-style: italic;
+}
+
+.about{
+    margin: 90px auto;
+}
+
+.bio{
+    margin: auto;
+    width: 80%;
+    text-align: center;
+    font-size: 16px;
+}
+
+.contact-info{
+    position: relative;
+    margin: 100px auto;
+    font-weight: 300;
+}
+
+.content-list li{
+    font-weight: 50px;
+    font-style: normal;
+}
+
+.content-list{
+   list-style: none;
+    position: absolute;
+    left: 1%;
+    width: 40%;
+    margin: auto;
+    float: left;
+    text-align: left;
+}
+
+.info-list{
+    width: 60%;
+    text-align: right;
+    margin: auto;
+    list-style: none;
+}
+
+.company-description{
+    padding-right: 20px;
+}
+
+@media screen and (max-width: 850px){
+    .profile-container{
+        width: 100%;
+    }
+
+    .profile-pic{
+        position: relative;
+        text-align: center;
+    }
+
+    .profile{
+        display: block;
+        padding: 1%;
+    }
+    
+    .resume-wrapper{
+        margin: 0;
+        padding: 0;
+    }
+
+    .contact-info{
+        margin: 50px auto;
+    }
+
+    .about{
+        margin: 50px auto;
+    }
+
+    .name-wrapper{
+        font-size: 20px;
+    }
+}
+
+
+
+/*------ Experience container for all other things -------*/
+.container{
+    position: relative;
+    background-color: #3d3e42;
+    float: right;
+    text-align: center;
+    width: 60%;
+    color: #9099a0;
+}
+
+.section-title{
+    text-align: center;
+    text-transform: uppercase;
+    text-decoration: underline solid;
+    color:  aquamarine;
+}
+
+/*------- Table of experience and the company I have worked for ------*/
+
+.experience-title{
+    text-align: left;
+    margin-left: 90px;
+}
+
+.experience{
+    position: relative;
+    color: #9099a0;
+}
+
+h2{
+    color: greenyellow;
+}
+
+h4{
+    color: whitesmoke;
+}
+
+h5{
+    color: white;
+}
+.job-description{
+     width: 40%;
+ }
+
+ .job-title{
+     color: whitesmoke;
+ }
+
+.about-company{
+     width: 60%;
+ }
+
+
+ /*------ SKILLS PERCENTAGE ------*/
+
+ .skill-percentage{
+     position: relative;
+     margin-bottom: 10px;
+ }
+
+ .skill-percentage::before{
+     content: "";
+     height: 6px;
+     background-color: #66cc99;
+     position: absolute;
+     bottom: 0;
+     margin-top: 3px;
+ }
+
+ .skill-percentage::after{
+     content: "";
+     display: block;
+     background: #4a4e51;
+     height: 6px;
+     display: block;
+     margin-top: 3px;
+
+ }
+
+ .skill-percentage:nth-child(1)::before{
+     width: 90%;
+     -webkit-animation: skill_1 0.6s ease;
+     animation: skill_1 0.6s ease;
+ }
+
+ .skill-percentage:nth-child(2)::before{
+    width: 100%;
+    -webkit-animation: skill_2 0.6s ease;
+    animation: skill_1 0.6s ease;
+}
+
+.skill-percentage:nth-child(3)::before{
+    width: 75%;
+    -webkit-animation: skill_3 0.6s ease;
+    animation: skill_1 0.6s ease;
+}
+
+.skill-percentage:nth-child(4)::before{
+    width: 70%;
+    -webkit-animation: skill_4 0.6s ease;
+    animation: skill_1 0.6s ease;
+}
+
+.skill-percentage:nth-child(5)::before{
+    width: 75%;
+    -webkit-animation: skill_5 0.6s ease;
+    animation: skill_1 0.6s ease;
+}
+
+.skill-percentage:nth-child(6)::before{
+    width: 80%;
+    -webkit-animation: skill_6 0.6s ease;
+    animation: skill_1 0.6s ease;
+}
+
+/*------  creating animation for the skill percentage ------*/
+
+@-webkit-keyframes skill_1{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+@keyframes skill_1{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+@-webkit-keyframes skill_2{
+    from{
+        width: 0;
+    }
+    to{
+        width: 80%;
+    }
+}
+
+@keyframes skill_2{
+    from{
+        width: 0;
+    }
+    to{
+        width: 80%;
+    }
+}
+
+@-webkit-keyframes skill_3{
+    from{
+        width: 0;
+    }
+    to{
+        width: 90%;
+    }
+}
+
+@keyframes skill_3{
+    from{
+        width: 0;
+    }
+    to{
+        width: 90%;
+    }
+}
+
+@-webkit-keyframes skill_4{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+@keyframes skill_4{
+    from{
+        width: 0;
+    }
+    to{
+        width: 100%;
+    }
+}
+
+@-webkit-keyframes skill_5{
+    from{
+        width: 0;
+    }
+    to{
+        width: 60%;
+    }
+}
+
+@keyframes skill_5{
+    from{
+        width: 0;
+    }
+    to{
+        width: 60%;
+    }
+}
+
+@-webkit-keyframes skill_6{
+    from{
+        width: 0;
+    }
+    to{
+        width: 40%;
+    }
+}
+
+@keyframes skill_6{
+    from{
+        width: 0;
+    }
+    to{
+        width: 40%;
+    }
+}
+
+/*------- Skills and hobbies -----*/
+
+.skills-n-refs{
+    width: 100%;
+    position: relative;
+    display: flex;
+}
+
+.skill-set{
+    float: left;
+    text-align: left;
+    width: 50%;
+}
+
+.hobbies{
+    padding: 15px;
+    width: 50%;
+
+}
+
+.skii-set{
+    color: darkslategray;
+}
+
+/*----- Refferences -------*/
+
+.refferences{
+    display: relative;
+}
+
+.person-details{
+    float: left;
+    width: 40%;
+    text-align: left;
+    color: aliceblue;
+}
+
+
+.info-details{
+    width: 60%;
+    text-align: right;
+    float: right;
+}
+
+.info-details li{
+    padding-right: 40px;
+}
+
+@media screen and (max-width: 850px){
+    .container{
+        width: 100%;
+    }
+
+    .skills-n-refs{
+        display: block;
+        width: 100%;
+        text-align: center;
+    }
+
+    .skill-set{
+        background-color: rgb(227, 233, 227);
+        width: 100%;
+        margin-right: 10px;
+    }
+
+    .hobbies{
+        width: 100%;
+        padding: 0;
+    }
+
+     p{
+        padding: 10px;
+    }
+
+    .resume-wrapper{
+        width: 100%;
+        margin: 0;
+        padding: 0;
+    }
+    
+    .info-details li{
+        padding-right: 30px;
+    }
+
+    .refferences{
+        margin-bottom: 30px;
+    }
+
+    .skill-set .section-title{
+        color: rgb(61, 66, 71);
+    }
+
+}
